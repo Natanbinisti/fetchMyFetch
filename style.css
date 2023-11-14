@@ -1,0 +1,82 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: #3f3f3f;
+    overflow: hidden;
+}
+.home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titre {
+    color: #8711b6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-toggler {
+    position: fixed;
+    z-index: 10;
+    top: 30px;
+    right: 30px;
+    height: 50px;
+    width: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+.line {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #8711b6;
+    transition: transform 0.3s ease-out,
+    opacity 0.1s ease-out;
+}
+
+
+.l1 {
+    transform: translateY(-10px)
+}
+.l3 {
+    transform: translateY(10px)
+}
+
+nav {
+    position: fixed;
+    width: 100vw;
+    min-height: 100vh;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #3f3f3f;
+    border-bottom: 2px solid #8711b6;
+    transform: translatey(-100%);
+    transition: transform 1s cubic-bezier(.33,.17,.26,1)
+}
+nav.active {
+    transform: translate(0);
+}
+nav a {
+    transition: 0.5s;
+    color: #8711b6;
+    font-size: 20px;
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+a:hover {
+    transition: 0.5s;
+    color: #ffffff;
+}
