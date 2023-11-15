@@ -1,7 +1,7 @@
 html, body {
-    background: #2980B9;
-    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
-    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    background: #3F3F3FFF;
+    background: -webkit-linear-gradient(to right, #3F3F3FFF, #3F3F3FFF, #3F3F3FFF);
+    background: linear-gradient(to right, #3F3F3FFF, #3F3F3FFF, #3F3F3FFF);
     min-width: 400px;
 }
 
